@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply border border-gray-300 rounded-md px-3 py-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-gray-500;
+  }
+
+  /* ✨ New neutral button style */
+  .btn {
+    @apply bg-gray-800 text-white px-4 py-2 rounded-md font-medium
+           hover:bg-gray-900 transition-all duration-200 shadow-sm;
+  }
+
+  .btn-outline {
+    @apply border border-gray-400 text-gray-700 px-4 py-2 rounded-md
+           hover:bg-gray-100 transition-all duration-200;
+  }
+}
+
+/* 🌿 Тохируулсан үндсэн стиль */
+body {
+  @apply bg-gray-50 text-gray-800 min-h-screen font-sans;
+}
+
+h1, h2, h3 {
+  @apply font-bold text-gray-900;
+}
+
+.input {
+  @apply border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-gray-600;
+}
+
+/* ✅ Default button override (replaces old blue one) */
+button {
+  @apply bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-900 transition-all duration-200;
+}
+
+table {
+  @apply border-collapse w-full text-sm;
+}
+
+th {
+  @apply bg-gray-100 border px-2 py-1 text-left font-medium text-gray-700;
+}
+
+td {
+  @apply border px-2 py-1 text-gray-800;
+}

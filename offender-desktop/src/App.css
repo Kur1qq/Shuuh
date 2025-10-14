@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-800 min-h-screen font-sans;
+}
+
+h1, h2, h3 {
+  @apply font-bold text-gray-900;
+}
+
+.input {
+  @apply border border-gray-300 rounded-md px-3 py-2 w-full text-sm
+         focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-gray-500;
+}
+
+table {
+  @apply border-collapse w-full text-sm;
+}
+
+th {
+  @apply bg-gray-100 border border-gray-300 px-2 py-1 text-left font-medium text-gray-700;
+}
+
+td {
+  @apply border border-gray-200 px-2 py-1 text-gray-800;
+}
+
+button {
+  @apply bg-gray-800 text-white px-4 py-2 rounded-md font-medium
+         hover:bg-gray-900 transition-all duration-200;
+}
