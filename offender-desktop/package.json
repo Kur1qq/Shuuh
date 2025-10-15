@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "setup": "node setup.mjs",
     "prepare": "pnpm install",
     "dev": "concurrently --raw \"pnpm run server\" \"pnpm run client\"",
     "client": "vite",
